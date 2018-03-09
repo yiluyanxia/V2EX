@@ -1,0 +1,76 @@
+/* pages/node/node.wxss */
+.nodeinfo{
+  display: flex;
+  justify-content: space-between; 
+  padding: 8px;
+} 
+.search{
+  position: relative;
+  width: 100%;
+  margin-right: 20rpx;
+}
+.search input{
+  background-color: #e2e2e2; 
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 10px;
+
+  /* border-bottom:2px solid #e2e2e2; */
+}
+.searchbtn{
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  z-index: 999;
+  width: 70rpx;
+  height: 70rpx;
+}
+.nodeinfo .listbtn{
+  width: 70rpx;
+  height: 70rpx;
+}
+.nodeinfo .listbtn image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.nodebox{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -5px;
+}
+.nodebox .item{
+  width:33%;
+  height: auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 5px 0;  
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  border-right: 5px solid #e2e2e2;
+}
+.nodebox .item.line{
+  width:100%;
+}
+
+/* .nodebox .item+.item{
+  border-left: 5px solid #e2e2e2
+} */
+.nodebox .item image{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+.nodebox .item text{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  color: #555;
+  font-size: 14pt;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}

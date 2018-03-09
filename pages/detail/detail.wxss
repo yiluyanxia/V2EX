@@ -1,0 +1,68 @@
+/* pages/detail/detail.wxss */
+.contbox{
+  background-color: #fff;
+}
+.titlewrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: top ;
+  border-bottom: 2px solid #e2e2e2;
+  padding: 8px;
+}
+.titlewrap .avatar image{
+ width: 70rpx;
+ height: 70rpx;
+ margin-left: 8rpx;
+
+}
+.titlewrap .titlebox .breadcrumbs{
+  color: #999;
+  font-size: 14pt;
+}
+.titlewrap .titlebox .title{
+  color: #000;
+  font-size: 17pt;
+  padding: 15px 0;
+}
+.titlewrap .titlebox .author{
+  color: #999;
+  font-size: 14pt;
+}
+.topicbox{
+  border-bottom: 1px solid #e2e2e2;
+  padding: 8px;
+}
+.topicbox text{
+  font-size: 16pt;
+  color: #000;
+}
+.replybox{
+  background-color: #fff;
+}
+.replybox .item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 2px solid #e2e2e2;
+}
+.replybox .info{
+  padding: 8px;
+  font-size: 14pt;
+  color: #999;
+}
+.replybox .avatar image{
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 8rpx;
+}  
+.replybox .reply .username{
+  font-size: 14pt;
+  color: #999;
+}
+.replybox .reply .username text{
+  color: #778087;
+  font-weight: bold;
+  padding-right: 10rpx;
+}

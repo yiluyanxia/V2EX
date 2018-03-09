@@ -1,0 +1,26 @@
+<!--pages/hot/hot.wxml-->
+<view class='wrapper'>
+  <view class='itembox' wx:for="{{hotList}}" wx:key="id" catchtap="navigateToDetail" id="{{item.id}}">
+    <view class='mainbox'>
+      <view class='menber'>
+        <!-- <image src='../../images/avatar.jpg'></image> -->
+        <image src='{{item.member.avatar_normal}}'></image>
+        <text class='username'>{{item.member.username}}</text>
+      </view>
+      <!-- menber end -->
+      <view class='item-title'>
+        <text>{{item.title}}</text>
+      </view>
+      <!-- item-title end -->
+      <!-- <view class='reply'>
+        <text>2分钟前 . 最后回复 </text>
+        <text class='replyname'>Jane</text>
+      </view> -->
+      <!--reply end -->
+    </view>
+    <!-- mainbox end -->
+    <view class='right'><view class='replynum'>{{item.replies}}</view></view>
+  </view>
+  <!-- item end -->
+</view>
+

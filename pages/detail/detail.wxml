@@ -1,0 +1,36 @@
+<!--pages/detail/detail.wxml-->
+<view class='wrapper detail'>
+  <view class='contbox sep20'>
+    <view class='titlewrap'>
+     <view class='titlebox'>
+      <view class='breadcrumbs'>V2EX > {{detail.node.title}} </view>
+      <view class='title'>{{detail.title}}</view>
+      <view class='author'>{{detail.member.username}} · {{detail.created}} </view>
+      
+     </view>
+     <view class='avatar'><image src="{{detail.member.avatar_normal}}"></image></view>
+     
+    </view>
+    <!-- titlewrap end -->
+    <view class='topicbox'>
+      <text>{{detail.content}}</text>
+    </view>
+    
+  </view>
+  <!-- contbox end -->
+
+  <view class='replybox'>
+    <view class='info'>{{detail.replies}} 回复  |  直到 {{detail.last_touched}}</view>
+    
+    <view class='item' wx:for="{{replies}}" wx:key="id">
+      <view class='avatar'><image src='{{item.member.avatar_normal}}'></image></view>
+      <view class='reply'>
+        <view class='username'><text>{{item.member.username}}</text> {{item.last_modified}}</view>
+        <view class='cont'>{{item.content}}</view>
+      </view>    
+    </view>
+
+
+  </view>
+  <!-- replybox end -->
+</view>

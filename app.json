@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/node/node",    
+    "pages/index/index",
+    "pages/hot/hot",
+    "pages/detail/detail",
+    "pages/user/user"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "V2EX",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/v2ex-logo-light.png",
+        "selectedIconPath": "./images/v2ex-logo-dark.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "最热",
+        "iconPath": "./images/hot-light.png",
+        "selectedIconPath": "./images/hot-dark.png"
+      },
+      {
+        "pagePath": "pages/node/node",
+        "text": "节点",
+        "iconPath": "./images/node-light.png",
+        "selectedIconPath": "./images/node-dark.png"
+      }
+    ]
+  }
+}

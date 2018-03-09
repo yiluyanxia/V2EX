@@ -1,0 +1,22 @@
+<!--pages/node/node.wxml-->
+<view class='nodeinfo'>
+  <view class='search'>
+     <input placeholder="search" auto-focus bindinput="searchKeyFun"/>
+     <icon class="searchbtn" type="search" size="28" color="#fff" bindtap='searchNode'/>
+  </view>
+  <view class='listbtn' bindtap='changeList'>
+    <image src='../../images/list1.png'></image>
+  </view>
+</view>
+
+<view class='wrapper nodebox'>
+  <!-- style="width:{{width}};" -->
+  <view  class='item {{line}}' wx:for="{{nodeList}}" wx:key="id">  
+      <!-- <image src='{{item.title}}'></image>   -->
+     <text>{{item.title}}</text> 
+  </view>
+
+  
+
+  
+</view>

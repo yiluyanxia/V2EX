@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class='wrapper'>
+  <view class='itembox' wx:for="{{latestList}}" wx:key="id" catchtap="navigateToDetail" id="{{item.id}}">
+    <view class='mainbox'>
+      <view class='menber'>
+        <image src='{{item.member.avatar_normal}}'></image>
+        <text class='username'>{{item.member.username}}</text>
+      </view>
+      <!-- menber end -->
+      <view class='item-title'>
+        <text>{{item.title}}</text>
+      </view>
+      <!-- item-title end -->
+      <view class='reply'>
+        <text>{{item.last_touched}} 最后回复 </text>
+        <!-- <text class='replyname'>Jane</text> -->
+      </view>
+      <!--reply end -->
+    </view>
+    <!-- main end -->
+    <view class='right'><view class='replynum'>{{item.replies}}</view></view>
+  </view>
+  <!-- item end -->
+</view>
+
+
+["未出场",0
+"已出场，未缴费",  1
+"已缴费",2
+"逾期未缴费", 3
+"已补缴"] 4
